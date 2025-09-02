@@ -1,125 +1,82 @@
-# AI Model Comparison Tool
+# AI Flista 🚀
+### *The Ultimate Multi-Model AI Comparison Platform*
 
-A Next.js web application that allows users to compare responses from multiple AI models simultaneously using OpenRouter's API.
+> **Harness the power of multiple AI models simultaneously. Compare, contrast, and discover the best AI responses for your needs in real-time.**
 
-## Features
+---
 
-- **Multi-Model Comparison**: Compare responses from GPT-4o, Claude 4 Sonnet, Gemini 2.0, and DeepSeek simultaneously
-- **Real-time Responses**: All selected models respond at the same time for efficient comparison
-- **Favorite System**: Mark your preferred responses and see them highlighted
-- **Copy Functionality**: Easily copy any AI response to your clipboard
-- **Responsive Design**: Works seamlessly on desktop and mobile devices
-- **Dark Mode Support**: Automatic dark/light mode based on system preferences
+## 🌟 What is AI Flista?
 
-## Supported AI Models
+AI Flista is a cutting-edge web application that revolutionizes how you interact with artificial intelligence. Instead of being limited to one AI model at a time, our platform enables you to **query multiple state-of-the-art AI models simultaneously** and compare their responses side-by-side in real-time.
 
-- **GPT-5** (OpenAI) - Latest GPT-5 model with improved performance
-- **Claude 4 Sonnet** (Anthropic) - Fast and efficient Claude model
-- **Gemini 2.5 Pro** (Google) - Google's latest multimodal model
-- **DeepSeek R-1** (DeepSeek) - Advanced reasoning and coding capabilities
+Built for researchers, developers, content creators, and AI enthusiasts who demand the best insights from the world's leading AI models.
 
+---
 
-## How It Works
+## ⚡ Core Features
 
-- The application uses OpenRouter's unified API to access multiple AI models
-- When you send a message, it's simultaneously sent to all selected models
-- Responses are displayed in a grid layout with one column per model
-- The interface automatically adjusts the grid based on the number of selected models
-- All API calls are made directly from the client to OpenRouter (no backend required)
+### **🔄 Real-Time Multi-Model Comparison**
+Execute the same prompt across multiple AI models simultaneously and watch responses generate in parallel. No more switching between platforms or waiting for sequential responses.
 
-## Project Structure
+### **🎯 Intelligent Model Selection**
+- Choose from 8+ cutting-edge AI models
+- Smart categorization: All Models, Pro Models, Specialized Models
+- Dynamic model availability status with real-time health indicators
 
-```
-aifliesta/
-├── app/
-│   ├── globals.css          # Global styles
-│   ├── layout.tsx           # Root layout
-│   └── page.tsx             # Main page component
-├── components/
-│   ├── ApiKeyInput.tsx      # API key input modal
-│   ├── ChatInterface.tsx    # Main chat interface
-│   ├── MessageInput.tsx     # Message input component
-│   ├── ModelResponse.tsx    # Individual model response display
-│   └── ModelSelector.tsx    # Model selection interface
-├── lib/
-│   ├── ai-models.ts         # AI model configurations
-│   ├── openrouter.ts        # OpenRouter API utilities
-│   └── utils.ts             # Utility functions
-└── package.json
-```
+### **💎 Advanced Response Management**
+- **Favorite System**: Mark and highlight your preferred responses
+- **One-Click Copy**: Instantly copy any response to clipboard
+- **Response Streaming**: Watch responses generate word-by-word like ChatGPT
+- **Error Handling**: Graceful fallbacks and retry mechanisms
 
-## Technologies Used
+### **🌐 Enterprise-Grade Infrastructure**
+- **OpenRouter API Integration**: Unified access to all major AI providers
+- **Supabase Backend**: Secure user authentication and data persistence
+- **Real-time Synchronization**: Live updates across all connected sessions
 
-- **Next.js 15** - React framework with App Router
-- **TypeScript** - Type safety
-- **Tailwind CSS** - Utility-first CSS framework
-- **OpenRouter API** - Unified AI model access
-- **React Hooks** - State management
+---
 
-## API Configuration
+## 🏗️ Technical Architecture
 
-The application is configured to work with OpenRouter's API. The supported models and their OpenRouter IDs are:
+### **Frontend Powerhouse**
+- **Next.js 15** with App Router - Latest React framework for optimal performance
+- **TypeScript** - Full type safety and enhanced developer experience
+- **Tailwind CSS** - Utility-first styling with custom design system
+- **React Hooks** - Modern state management and side-effect handling
 
-- `openai/gpt-4o` - GPT-4o
-- `anthropic/claude-3-5-sonnet-20241022` - Claude 4 Sonnet
-- `google/gemini-2.0-flash-exp` - Gemini 2.0
-- `deepseek/deepseek-coder` - DeepSeek
+---
+## 🧠 Supported AI Powerhouses
 
-## Deployment
+### **OpenAI GPT Series**
+- **GPT-5** - The latest frontier model with unprecedented reasoning capabilities
+- **GPT-4o** - Optimized for complex multi-modal tasks
 
-This application can be deployed to any platform that supports Next.js:
+### **Anthropic Claude Family**
+- **Claude 4 Sonnet** - Superior performance with enhanced safety and reasoning
+- **Claude 3.5 Sonnet** - Lightning-fast responses with exceptional accuracy
 
-- **Vercel** (recommended): Connect your GitHub repository
-- **Netlify**: Build command: `npm run build`, Publish directory: `.next`
-- **Railway**: Automatic deployment from GitHub
-- **Self-hosted**: Run `npm run build && npm start`
+### **Google Gemini Models**
+- **Gemini 2.5 Pro** - Advanced multimodal AI with superior context understanding
+- **Gemini 2.0 Flash** - Ultra-fast responses for real-time applications
 
-## Contributing
+### **DeepSeek Advanced Models**
+- **DeepSeek R-1** - Specialized in complex reasoning and advanced coding tasks
+- **DeepSeek Coder** - Purpose-built for software development and technical analysis
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+---
+## 🚀 Innovation Highlights
 
-## License
+### **Real-Time Streaming**
+Experience responses as they generate with word-by-word streaming, just like ChatGPT, but across multiple models simultaneously.
 
-MIT License - see LICENSE file for details
+### **Intelligent Model Routing**
+Our platform automatically handles API failures, rate limits, and model availability, ensuring you always get responses from your selected models.
 
-## Support
+### **Comparative Analytics**
+Built-in tools to analyze response quality, speed, and accuracy across different models for the same prompt.
 
-For issues or questions:
-1. Check the [OpenRouter documentation](https://openrouter.ai/docs)
-2. Open an issue in this repository
-3. Contact the maintainers
+### **Extensible Architecture**
+Modular design allows for easy integration of new AI models as they become available through OpenRouter.
 
-## Roadmap
+---
 
-- [ ] Add more AI models
-- [ ] Conversation history persistence
-- [ ] Export conversations
-- [ ] Custom model parameters
-- [ ] Response streaming
-- [ ] Model performance metrics
-
-## Supabase Setup
-
-1. Create a project at `https://supabase.com` and get your project URL and anon key.
-2. Add the following to your `.env.local`:
-```bash
-NEXT_PUBLIC_SUPABASE_URL=your-project-url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-```
-3. Apply database schema (from `supabase/migrations.sql`). In the Supabase SQL editor, paste and run the contents:
-   - Creates `public.chats` table
-   - Enables RLS with user-isolation policies
-4. Start the app and sign up via `/signup`. Then login at `/login`.
-5. Use the app; chat sessions will appear on `/history` for the logged-in user.
-
-Data model:
-- `public.chats`
-  - `user_id` (uuid) → owner
-  - `prompt` (text)
-  - `models` (text[])
-  - `responses` (jsonb) → keyed by model id with `{ text, error }`
-  - `created_at` (timestamptz)
