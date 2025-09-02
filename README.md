@@ -1,4 +1,4 @@
-# AI Flista 🚀
+# AI Fliesta 🚀
 ### *The Ultimate Multi-Model AI Comparison Platform*
 
 > **Harness the power of multiple AI models simultaneously. Compare, contrast, and discover the best AI responses for your needs in real-time.**
@@ -64,19 +64,5 @@ Execute the same prompt across multiple AI models simultaneously and watch respo
 - **DeepSeek Coder** - Purpose-built for software development and technical analysis
 
 ---
-## 🚀 Innovation Highlights
 
-### **Real-Time Streaming**
-Experience responses as they generate with word-by-word streaming, just like ChatGPT, but across multiple models simultaneously.
-
-### **Intelligent Model Routing**
-Our platform automatically handles API failures, rate limits, and model availability, ensuring you always get responses from your selected models.
-
-### **Comparative Analytics**
-Built-in tools to analyze response quality, speed, and accuracy across different models for the same prompt.
-
-### **Extensible Architecture**
-Modular design allows for easy integration of new AI models as they become available through OpenRouter.
-
----
 
